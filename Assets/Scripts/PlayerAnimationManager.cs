@@ -21,7 +21,7 @@ public class PlayerAnimatorController : MonoBehaviour
     public void Update()
     {
         animator.SetFloat("CharacterSpeed", rb.velocity.magnitude);
-        animator.SetBool("IsGrounded", movement.IsGrounded);
+        animator.SetBool("IsFalling", movement.IsGrounded);
        
         if (Input.GetButtonUp("Fire1"))
         {
